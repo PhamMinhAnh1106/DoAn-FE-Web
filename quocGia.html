@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Movie HD Zone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--link file css-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.slidey.min.css">
+  <link rel="stylesheet" href="css/medile.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <!--link file js-->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/move-top.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Setting cho owlCarousel-->
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo").owlCarousel({
+        autoPlay: 3000, //Set AutoPlay để chạy sau 3 giây
+        items: 5,
+        itemsDesktop: [640, 4],
+        itemsDesktopSmall: [414, 3]
+      });
+    }); 
+  </script>
+  <!--link font chữ-->
+  <link rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="header">
+    <div style="height: 52px;"> </div>
+    <div class="container">
+      <div class="cinemalayouts_logo">
+        <a href="index.html">
+          <h1>MovieHD<span>Zone</span></h1>
+        </a>
+      </div>
+      <img src="image/aboutUs-img/stu-icon.jpg" alt="stu" style="float: right;width: 10%;margin-top: -15px;">
+    </div>
+    <!--nav bar-->
+
+    <div class="movies_nav">
+      <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-top" style="height: 50px ;background-color: rgb(48, 155, 62);">
+          <div class="navbar-header navbar-left">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!--Trang chủ-->
+              <li class="active"><a href="index.html">Trang Chủ</a></li>
+              <!--Thể loại-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Thể loại <b class="caret"></b></a>
+                <ul class="dropdown-menu multi-column">
+                  <li>
+                    <div class="col-sm-12">
+                      <ul class="multi-column-dropdown">
+                        <li><a href="theLoai.html">Chiến Tranh</a></li>
+                        <li><a href="theLoai.html">Chính Kịch</a></li>
+                        <li><a href="theLoai.html">Gia Đình</a></li>
+                        <li><a href="theLoai.html">Hài Hước</a></li>
+                        <li><a href="theLoai.html">Hành Động</a></li>
+                        <li><a href="theLoai.html">Khoa Học Viễn Tưởng</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!--Quốc gia-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quốc Gia <b class="caret"></b></a>
+                <ul class="dropdown-menu multi-column">
+                  <li>
+                    <div class="col-sm-12">
+                      <ul class="multi-column-dropdown">
+                        <li><a href="quocGia.html">Phim Hàn Quốc</a></li>
+                        <li><a href="quocGia2.html">Phim Mỹ </a></li>
+                        <li><a href="quocGia3.html">Phim Việt Nam </a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!--About us-->
+              <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!--Banner phim-->
+    <div id="slidey" style="display: none;">
+      <ul>
+        <li><img src="image/Bg/dpvp.jpg" style="height: 500px;" alt="">
+          <p class="title">Đào, Phở và Piano</p>
+          <p class="description">Phim lấy bối cảnh 60 ngày đêm Hà Nội chiến đấu chống Pháp vào cuối năm 1946, đầu năm
+            1947, những ngày cuối cùng trước khi quân ta rút lên chiến khu Việt Bắc.
+            Phim xoay quanh câu chuyện tình yêu giữa Dũng và Lan, hai con người từ hai tầng lớp khác nhau nhưng lại có
+            chung một tình yêu mãnh liệt dành cho Hà Nội và ý chí quyết tâm chiến đấu bảo vệ quê hương.
+          </p>
+        </li>
+        <li><img src="image/Bg/hp.jpg" style="height: 500px;" alt="">
+          <p class="title">Hai Phượng</p>
+          <p class="description">"Hai Phượng" là một bộ phim hành động Việt Nam nổi tiếng ra mắt vào năm 2019, đánh dấu
+            sự trở lại mạnh mẽ của thể loại phim hành động trong làng điện ảnh Việt. Đạo diễn Lê Văn Kiệt đã tạo ra một
+            câu chuyện hấp dẫn xoay quanh nhân vật chính Phượng, một cô giáo dạy tiểu học sống ở một ngôi làng nhỏ ven
+            biển. Cuộc sống của cô bị đảo lộn khi con gái bị bắt cóc bởi một băng nhóm tội phạm buôn bán nội tạng.</p>
+        </li>
+        <li><img src="image/Bg/eg.jpg" style="height: 500px;" alt="">
+          <p class="title">Avenger: End Game</p>
+          <p class="description">Phim lấy bối cảnh sau thảm kịch "búng tay" của Thanos trong Avengers: Infinity War, nửa
+            dân số vũ trụ tan biến. 5 năm sau, những Avengers còn sót lại cố gắng sống chung với mất mát và tìm cách đảo
+            ngược hành động của Thanos. </p>
+        </li>
+        <li><img src="image/Bg/ctst.jpg" style="height: 500px;" alt="">
+          <p class="title">Chuyến Tàu Sinh Tử</p>
+          <p class="description">Phim lấy bối cảnh Hàn Quốc đang phải đối mặt với đại dịch zombie bùng phát dữ dội.
+            Seok-woo (Gong Yoo), một người cha bận rộn với công việc, quyết định đưa con gái Su-an (Kim Su-an) đến Busan
+            để gặp mẹ. Tuy nhiên, ngay khi họ lên tàu KTX, thảm kịch xảy ra: virus zombie nhanh chóng lây lan trên tàu,
+            biến những hành khách thành những xác sống hung hãn.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <script src="js/jquery.slidey.js"></script>
+    <script src="js/jquery.dotdotdot.min.js"></script>
+    <script type="text/javascript">
+      $("#slidey").slidey({
+        interval: 5000,
+        listCount: 4,
+        autoplay: false,
+        showList: true
+      });
+      $(".slidey-list-description").dotdotdot();
+    </script>
+    <div>
+      <h2 style="padding-left:10px; text-decoration: underline; margin: 10px 0px;">
+        <img src="image/aboutUs-img/icon1.png" alt="" style="width: 3%;padding: 5px;">
+        PHIM QUỐC GIA: HÀN QUỐC
+      </h2>
+      <div class="container" style="display: flex;">
+        <div class="row">
+          <div class="col-sm-6 cinemal-movie-gride-agile">
+            <a href="BlockFlim1.html" class="hvr-shutter-out-horizontal"><img style="height: 550px; width: 375px;"
+                src="image/Poster/traintobusan.jpg" title="album-name" class="img-responsive" alt=" " />
+              <div class="cinemal-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+            </a>
+            <div class="mid-1 agileits_cinemalayouts_mid_1_home">
+              <div class="cinemal-movie-text">
+                <h6><a href="BlockFlim1.html">Chuyến Tàu Sinh Tử</a></h6>
+              </div>
+            </div>
+            <div class="ribben">
+              <p>NEW</p>
+            </div>
+          </div>
+          <div class="col-sm-6 cinemal-movie-gride-agile">
+            <a href="BlockFlim1.html" class="hvr-shutter-out-horizontal"><img style="height: 550px;width: 375px;"
+                src="image/Poster/dkdtpgso7.jpg" title="album-name" class="img-responsive"
+                alt=" " />
+              <div class="cinemal-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+            </a>
+            <div class="mid-1 agileits_cinemalayouts_mid_1_home">
+              <div class="cinemal-movie-text">
+                <h6><a href="BlockFlim1.html">Điều Kỳ Diệu Ở Phòng Giam Số 7</a></h6>
+              </div>
+            </div>
+            <div class="ribben">
+              <p>NEW</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </h2>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <nav>
+          <div class="col-md-6 cinemals_footer_grid1_left">
+            <p>&copy; Đồ án Website thứ 3 ca 3 | Made by <a href="#">Phạm Minh Anh và Nguyễn Văn Huy</a></p>
+          </div>
+          <div class="col-md-2 cinemals_footer_grid1_right">
+            <ul>
+              <li>
+                <a href="aboutUs.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+</body>
+
+</html>

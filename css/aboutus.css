@@ -1,0 +1,261 @@
+/* Đặt lại các liên kết trong dropdown menu */
+.dropdown-menu .dropdown-item {
+  color: rgb(3, 3, 3); /* Bạn có thể thay đổi màu xanh tùy thích */
+  text-decoration: none; /* Loại bỏ gạch dưới */
+}
+.dropdown-menu .dropdown-item:hover {
+  color: rgb(48, 155, 62);/* Màu khi hover, tùy chỉnh theo ý bạn */
+  text-decoration: none; /* Đảm bảo không có gạch dưới khi hover */
+}
+
+.stu-icon{
+  float: right;
+  margin-left: 800px;
+  width: 6%;
+}
+@media (max-width: 415px) {
+  .stu-icon{
+    display: none;
+  }
+}
+.cinemalayouts_logo h2{
+padding-top: 15px;
+text-decoration: none;
+}
+
+.cinemalayouts_logo a{
+  text-decoration: none;
+}
+.Bg-Block{
+  background-color:rgba(138, 133, 133, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+.Bg-Body {
+  background-image:url(/image/aboutUs-img/footer-bg.jpg);
+}
+.cinemalayouts_logo a h2 span{
+	color: rgb(48, 155, 62);
+    font-size: .5em;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+body {
+  background-color: #fff;
+  font-size: 20px; /* or 2rem */
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0;
+}
+a,li{
+  text-decoration: none;
+  list-style: none;
+}
+/* Headings */
+h1{
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+  text-align: center;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.12;
+  letter-spacing: -1px;
+  text-decoration: underline;
+}
+h3 {
+	font-size: 25px;
+	font-size: 2rem;
+	letter-spacing: -0.5px;
+}
+p{
+  text-align: justify; /* Thêm thuộc tính để căn đều chữ */
+  font-size: 25px;
+}
+img {
+  height: auto;
+  vertical-align: top;
+}
+
+#backToTop{
+	width: 50px;
+	height: 50px;
+	background-color: aqua;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+	cursor: pointer;
+}
+#backToTop:hover{
+	background-color:aquamarine;
+}
+
+.footer{
+	background:#111111;
+	padding:5px 150px ;
+  color: antiquewhite;
+}
+.footer a{
+  font-size: 20px;
+  color: #fff;
+}
+.footer a:hover{
+  color:rgb(48, 155, 62);
+}
+
+/* Site inner layout */
+.site-inner {
+  clear: both;
+  margin: 0 auto;
+  padding: 40px 0;
+  color: #fff;
+}
+.container-fluid
+{
+  padding-left: 0px;
+}
+.site-inner,
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto; /* Combined left/right margins */
+}
+.container {
+  display: flex;
+  padding: 20px 20px;
+}
+.content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+.content-right {
+    flex: 4;
+    margin-right: 50px;
+}
+.content-left {
+    flex: 2;
+    margin-left: 50px;
+}
+.main_card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: lightgrey;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+  }
+  .background {
+    position: absolute;
+    inset: 0;
+    width: 300px;
+   height: 400px;
+   background-size: cover; /* Điều chỉnh kích thước của ảnh nền */
+  background-position: center; /* Điều chỉnh vị trí của ảnh nền */
+  }
+  .cool_card_logo {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    transition: all 0.6s ease-in-out;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icon {
+    font-weight: bold;
+  }
+  
+  .box {
+    position: absolute;
+    padding: 10px;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.389);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 1px solid white;
+    border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+    box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+    transform-origin: bottom left;
+    transition: all 1s ease-in-out;
+  }
+  
+  .box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .box:hover .svg {
+    fill: white;
+  }
+  
+  .box1 {
+    width: 85%;
+    height: 85%;
+    bottom: -85%;
+    left: -85%;
+    transition-delay: 0.2s;
+  }
+  
+  .box2{
+    width: 65%;
+    height: 65%;
+    bottom: -65%;
+    left: -65%;
+    transition-delay: 0.4s;
+  }
+  .box3{
+    width: 45%;
+    height: 45%;
+    bottom: -45%;
+    left: -45%;
+    transition-delay: 0.6s;
+  }
+  .box4{
+    width: 25%;
+    height: 25%;
+    bottom: -25%;
+    left: -25%;
+    transition-delay: 0.8s;
+  }
+  .main_card:hover {
+    transform: scale(1.1);
+  }
+  .main_card:hover .box {
+    bottom: -1px;
+    left: -1px;
+  }
+  .main_card:hover .cool_card_logo {
+    transform: translate(0, 0);
+    bottom: 20px;
+    right: 20px;
+  }
+.carousel-inner{
+  border-radius:20px;
+  width: 1300px;
+  height: 550px;
+}
+
+
+ 
+
